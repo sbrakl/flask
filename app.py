@@ -4,11 +4,11 @@ import socket
 
 app = Flask(__name__)
 
-@app.route('/')
+@app.route('/test')
 def hello_world():
     return 'Hello, World!'
 
-@app.route('/test')
+@app.route('/')
 def display_page():
     hostname = socket.gethostname()    
     ip = socket.gethostbyname(hostname)
